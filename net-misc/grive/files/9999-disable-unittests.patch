@@ -1,0 +1,19 @@
+diff --git a/libgrive/CMakeLists.txt b/libgrive/CMakeLists.txt
+index 9e8e633..c2e0856 100644
+--- a/libgrive/CMakeLists.txt
++++ b/libgrive/CMakeLists.txt
+@@ -108,7 +108,7 @@ endif()
+ #install(FILES ${UTIL_HEADERS} DESTINATION include/grive/util)
+ #install(FILES ${XML_HEADERS} DESTINATION include/grive/xml)
+ 
+-IF ( CPPUNIT_FOUND )
++IF ( disabled_CPPUNIT_FOUND )
+ 	message("-- Building unitary tests along with the library and the binary")
+ 	set( OPT_INCS		${CPPUNIT_INCLUDE_DIR} )
+     
+@@ -130,4 +130,4 @@ IF ( CPPUNIT_FOUND )
+ 		${Boost_LIBRARIES}
+ 	)
+         
+-ENDIF ( CPPUNIT_FOUND )
++ENDIF ( disabled_CPPUNIT_FOUND )

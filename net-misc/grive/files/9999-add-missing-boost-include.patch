@@ -1,0 +1,24 @@
+diff --git a/grive/CMakeLists.txt b/grive/CMakeLists.txt
+index d5f8ebe..b4ebd01 100644
+--- a/grive/CMakeLists.txt
++++ b/grive/CMakeLists.txt
+@@ -4,6 +4,7 @@ find_package(Boost COMPONENTS program_options REQUIRED)
+ 
+ include_directories(
+ 	${grive_SOURCE_DIR}/../libgrive/src
++    ${Boost_INCLUDE_DIR}
+ 	${OPT_INCS}
+ )
+ 
+diff --git a/libgrive/CMakeLists.txt b/libgrive/CMakeLists.txt
+index a9d6018..9e8e633 100644
+--- a/libgrive/CMakeLists.txt
++++ b/libgrive/CMakeLists.txt
+@@ -41,6 +41,7 @@ include_directories(
+ 	${libgrive_SOURCE_DIR}/src
+ 	${libgrive_SOURCE_DIR}/test
+ 	${GDBM_INCLUDE_DIR}
++    ${Boost_INCLUDE_DIR}
+ 	${OPT_INCS}
+ )
+ 
