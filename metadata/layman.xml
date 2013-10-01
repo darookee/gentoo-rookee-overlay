@@ -1,0 +1,14 @@
+<?xml version="1.0" ?> 
+<layman> 
+  <overlay 
+    type = "git" 
+    src  = "git://github.com/darookee/gentoo-rookee-overlay.git" 
+    contact = "nils.uliczka@darookee.net" 
+    status = "unofficial" 
+    name = "rookee-overlay"> 
+
+    <description> 
+        Gentoo overlay with packages I use from different other overlays (sunrise, c1pher,...)
+    </description> 
+  </overlay> 
+</layman> 
